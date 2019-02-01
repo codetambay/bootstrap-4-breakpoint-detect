@@ -1,0 +1,83 @@
+
+/*
+ * Bootstrap 4 breakpoints
+						          | Max container width
+	Extra small <576px  |
+	Small       ≥576px  | 540px	
+	Medium      ≥768px  | 720px	
+	Large       ≥992px  | 960px	
+	Extra large ≥1200px | 1140px
+*/
+
+@media (max-width: 575.98px) {
+	.bp-xs {
+	  display: block;
+	  content: "xs";  
+	}
+	
+	.bp-sm,
+	.bp-md,
+	.bp-lg,
+	.bp-xl {
+	  display: none;
+	}
+  
+  }
+  
+  @media (min-width: 576px) {
+	.bp-sm {
+	   display: block;
+	   content: "sm";      
+	}
+  
+	.bp-xs,
+	.bp-md,
+	.bp-lg,
+	.bp-xl {
+	  display: none;
+	}
+  
+  }
+  
+  @media (min-width: 768px) {
+	.bp-md {
+	   display: block;
+	   content: "md";  
+	}
+	.bp-xs,
+	.bp-sm,
+	.bp-lg,
+	.bp-xl {
+	  display: none;
+	}
+  
+  }
+  
+  @media (min-width: 992px) {
+	.bp-lg {
+	   display: block;
+	   content: "lg"; 
+	}
+	.bp-xs,
+	.bp-sm,
+	.bp-md,
+	.bp-xl {
+	  display: none;
+	}
+  
+  }
+  
+  @media (min-width: 1200px) { 
+	.bp-xl {
+	   display: block;
+	   content: "xl"; 
+	}
+	.bp-xs,
+	.bp-sm,
+	.bp-md,
+	.bp-lg {
+	  display: none;
+	}
+  
+  }
+  

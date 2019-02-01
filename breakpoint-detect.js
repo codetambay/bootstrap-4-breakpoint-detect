@@ -91,46 +91,44 @@ $(function() {
     
             function runBreakpoint() {
                 if( breakpointMediaContains ) {
-                    //let getBPResultFunc = getBPResult();//store function retun value 
+                    
                     let breakpointMedia = getBreakpoint( getBPResult() );
                     breakpointMedia;//run 	
 
-                    //site logo image
-                    var brandLogo = $('.navbar-brand > img'), 
-                    mobileLogo = brandLogo.data('mobile'), 
-                    mainLogo = brandLogo.data('data');
+                    //breakpointMedia return one of these ('bpXSmall', 'bpSmall', 'bpMedium', 'bpLarge, 'bpXLarge')
                     if (breakpointMedia === 'bpXSmall' ) {
-                        //run if is is XS breakpoint                        
+                        //run if is is XS breakpoint   
+                        //run code here...
                     } else {
                         //run in all Breakpoints except XS breakpoint
+                        //run code here...
                     }                 
  
                 } else {
                     //testing only
                     console.log("Not Runnig... Please check bootstrap 4 breakpoinrs and CSS.");					
                 }
-            }//runBreakpoint
-    
-            runBreakpoint();//invoke main func
-    
+            }//runBreakpoint()
+            
+            //page load run and check breakpoint || occur when page load || run once every page load/reload
+            runBreakpoint();
+            
             $(window).resize(function() {  
-
-                runBreakpoint();//invoke main func when resize    
-                
-                //site logo image
-                var brandLogo = $('.navbar-brand > img'), 
-                    mobileLogo = brandLogo.data('mobileLogo'), 
-                    mainLogo = brandLogo.data('main');      
-                    
+                //run and check breakpoint when window resize || occur when browser viewport resize
+                runBreakpoint();  
+                 
                     let breakpointMedia = getBreakpoint( getBPResult() );
                     //console.log("breakpointMedia", breakpointMedia);
-
+                    
+                    //breakpointMedia return one of these ('bpXSmall', 'bpSmall', 'bpMedium', 'bpLarge, 'bpXLarge')
                     if (breakpointMedia === 'bpXSmall' ) {
                         //run if is is XS breakpoint
+                        //run code here...
                     } else {
                         //run in all Breakpoints except XS breakpoint
+                        //run code here...
                     }    
 
-            });//resize
+            });//window resize
     
     }); //function

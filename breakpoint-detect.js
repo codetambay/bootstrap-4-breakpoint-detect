@@ -1,7 +1,7 @@
 
 $(function() {
     /*!
-    Author: aljun
+    Author: baymax
     Description: Bootstrap 4 Breakpoint and @media Detect using JS and CSS
     url: https://github.com/codetambay/bootstrap-4-breakpoint-detect
     Version: 1.0.1
